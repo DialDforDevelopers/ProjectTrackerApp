@@ -1,0 +1,12 @@
+Project:
+Name, Description, startDate, finishDate
+
+Developer:
+Name, EmailID, Address
+
+Company:
+Name
+
+ProjectDevelopers:
+
+(both Project and Developer come into one place)
