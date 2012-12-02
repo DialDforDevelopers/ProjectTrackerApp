@@ -1,12 +1,14 @@
 Project:
 Name, Description, startDate, finishDate
 
+
 Developer:
 Name, EmailID, Address
+
 
 Company:
 Name
 
 ProjectDevelopers:
 
-(both Project and Developer come into one place)
+(both Project and Developer objects should be thrown into new class) (//testing github)
