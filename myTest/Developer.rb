@@ -6,9 +6,10 @@ class Developer
 		@projectInvolved = []
 	end
 	def addInvolvedProjects(projects)
-		@projectInvolved.push(projects.projectName)
+			@projectInvolved.push(projects.projectName)
 	end
 	def showInvolvedProjects
+		@projectInvolved.sort!
 		@projectInvolved.each do |project|
 			puts project
 		end
