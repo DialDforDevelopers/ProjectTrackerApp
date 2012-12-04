@@ -1,10 +1,10 @@
 class Company
-	attr_accessor :company_name, :projects , :developers, :members
+	attr_accessor :company_name, :projects , :staff, :members
 
 	def initialize(company_name)
 		@company_name=company_name
 		@projects=[]
-		@developers=[]
+		@staff=[]
 		@members = []
 	end
 
@@ -18,7 +18,23 @@ class Company
 		end
 	end
 
-	
+	def addStaff(staff)
+		@staff.push(staff.name)
+	end	
+
+	def showStaff
+		@staff.sort!
+		@staff.each do |person| 
+			puts person
+		end
+
+	end
+
+	def findFaultyStaff
+		faultyStaff = Array.new
+		faultyStaff = @staff - @members
+		puts faultyStaff
+	end
 
 	def showDeveloper
 		@projects.each do |developer|
